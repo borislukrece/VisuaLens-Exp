@@ -1,38 +1,38 @@
 # VisuaLens
 
-VisuaLens est un petit projet d'expérimentation d'une galerie interactive conçue pour offrir une expérience utilisateur immersive et fluide. Ce projet combine des animations stylées, des interactions dynamiques et des éléments visuels attractifs, parfait pour les projets artistiques ou les vitrines numériques.
+VisuaLens is a small experimental project of an interactive gallery designed to offer an immersive and smooth user experience. This project combines stylish animations, dynamic interactions, and attractive visual elements, perfect for artistic projects or digital showcases.
 
-## Fonctionnalités principales
+## Main Features
 
-- **Animation circulaire avec des boutons interactifs** : Bouton stylé et dynamique pour activer des interactions.
-- **Galerie interactive** : Contient plusieurs images affichées avec des effets de survol et des boîtes d'informations descriptives.
-- **Mode plein écran** : Présentation immersive des images dans une vue séparée.
-- **Style moderne** : Design basé sur Tailwind CSS pour un rendu visuel soigné.
+- **Circular animation with interactive buttons**: Stylish and dynamic button to activate interactions.
+- **Interactive gallery**: Contains multiple images displayed with hover effects and descriptive info boxes.
+- **Full-screen mode**: Immersive presentation of images in a separate view.
+- **Modern style**: Design based on Tailwind CSS for a neat visual rendering.
 
-## Technologies utilisées
+## Technologies Used
 
-- **HTML5** : Structure de la galerie.
-- **Tailwind CSS** : Framework CSS pour la mise en page responsive et stylisée.
-- **jQuery** : Gère les interactions et animations.
-- **JavaScript** : Interactivité personnalisée.
-- **Blibliothèque tierces** :
+- **HTML5**: Structure of the gallery.
+- **Tailwind CSS**: CSS framework for responsive and stylish layout.
+- **jQuery**: Manages interactions and animations.
+- **JavaScript**: Custom interactivity.
+- **Third-party libraries**:
   - [TailwindCSS](https://tailwindcss.com/)
   - [jQuery](https://jquery.com/)
 
 ## Installation
 
-1. Clonez le dépôt du projet :
+1. Clone the project repository:
 
    ```bash
    git clone https://github.com/borislukrece/VisuaLens-Exp.git
    cd VisuaLens
    ```
 
-2. Assurez-vous que vous avez un serveur web pour servir les fichiers statiques (facultatif pour une prévisualisation).
+2. Ensure you have a web server to serve static files (optional for preview).
 
-3. Ouvrez le fichier `index.html` dans votre navigateur préféré.
+3. Open the `index.html` file in your preferred browser.
 
-## Arborescence
+## Directory Structure
 
 ```plaintext
 VisuaLens/
@@ -48,41 +48,41 @@ VisuaLens/
 └── README.md
 ```
 
-## Développement
+## Development
 
-### Étapes pour ajouter des fonctionnalités
+### Steps to Add Features
 
-1. Ajouter vos nouvelles images dans le dossier `assets/img/`.
-2. Modifier le fichier `index.html` pour ajouter une référence aux nouvelles images.
-3. Mettre à jour le script JavaScript (`assets/main.js`) pour intégrer des interactions supplémentaires.
+1. Add your new images to the `assets/img/` folder.
+2. Modify the `index.html` file to add a reference to the new images.
+3. Update the JavaScript script (`assets/main.js`) to integrate additional interactions.
 
-## Contribuer
+## Contributing
 
-Les contributions sont les bienvenues ! Suivez ces étapes :
+Contributions are welcome! Follow these steps:
 
-1. Fork le projet.
-2. Créez une branche pour vos modifications :
-
-   ```bash
-   git checkout -b feature/amélioration
-   ```
-
-3. Effectuez vos modifications et commitez-les :
+1. Fork the project.
+2. Create a branch for your modifications:
 
    ```bash
-   git commit -m "Ajout d'une nouvelle fonctionnalité."
+   git checkout -b feature/improvement
    ```
 
-4. Poussez vos modifications sur GitHub et ouvrez une pull request.
+3. Make your changes and commit them:
 
-## Auteur
+   ```bash
+   git commit -m "Added a new feature."
+   ```
 
-Développé avec ❤️ par **Boris Lukrece**.
+4. Push your changes to GitHub and open a pull request.
 
-## Licence
+## Author
 
-Ce projet est sous licence [MIT](LICENSE). Vous êtes libre de l'utiliser et de le modifier pour vos propres projets.
+Developed with ❤️ by **Boris Lukrece**.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use and modify it for your own projects.
 
 ---
 
-Pour toute question ou suggestion, n'hésitez pas à me contacter ou à ouvrir une issue ! 🚀
+For any questions or suggestions, feel free to contact me or open an issue! 🚀
