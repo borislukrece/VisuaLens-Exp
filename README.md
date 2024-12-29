@@ -24,7 +24,7 @@ VisuaLens est un petit projet d'expérimentation d'une galerie interactive conç
 1. Clonez le dépôt du projet :
 
    ```bash
-   git clone https://github.com/borislukrece/VisuaLens.git
+   git clone https://github.com/borislukrece/VisuaLens-Exp.git
    cd VisuaLens
    ```
 
