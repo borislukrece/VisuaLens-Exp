@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./img/back.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+}
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.container-image .img1, .container-image .img2, .container-image .img3 {
+    width: calc(100vw/8);
+    height: 20vh;
+    margin: 1rem 1rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    background: rgb(237, 237, 237);
+    transition: all 0.5s ease;
+}
+
+.img1:hover, .img2:hover, .img3:hover {
+    width: calc(100vw/4);
+    height: 60vh;
+}
+
+.container-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itemHide {
+    animation: hideImg 1s ease-in-out forwards;
+    transition: all 0.5s ease-in;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.itemHide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.itemHide:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.itemHide:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes hideImg {
+    to {
+        -moz-transform: translate(-100vw, -100vh);
+        -webkit-transform: translate(-100vw, -100vh);
+        transform: translate(-100vw, -100vh);
+    }
+}
+
+.item:hover .item-info {
+    opacity: 100;
+    animation: itemInfo 0.5s;
+    transition: all 0.5s ease;
+}
+
+@keyframes itemInfo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+.btn {
+    width: 138px;
+    height: 138px;
+    font-size: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.container-btn {
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform-origin: center;
+    transform: rotate(360deg);
+    animation: btnAnim 0.5s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes btnAnim {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle span {
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform-origin: 0 calc(138px/2);
+}
+
+.btn img {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33.33px;
+    height: 20px;
+}
+
+.btnHide {
+    animation: hideBtn 1s ease-in-out forwards;
+    transition: all 0.5s ease-in;
+    animation-delay: 1.5s;
+}
+
+@keyframes hideBtn {
+    to {
+        -moz-transform: translate(0, -100vh);
+        -webkit-transform: translate(0, -100vh);
+        transform: translate(0, -100vh);
+    }
+}
+
+.second-view {
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.second-view img {
+    width: calc(100vw/8);
+    height: 80vh;
+    margin: 1rem 1rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    background: rgb(237, 237, 237);
+    transition: all 0.5s ease;
+    object-fit: cover;
+}
+
+.second-view img:hover {
+    width: calc(100vw/4);
+    height: 80vh;
+}
+
+.second-view.show {
+    transform: scale(1);
+    transition: all 0.5s ease;
+    transition-delay: 1.5s;
+    -moz-backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.second-view.hide {
+    transform: scale(0);
+    transition: all 0.5s ease;
+    transition-delay: 1s;
+    background: none;
+}
+
+.hide-item-SV {
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+@keyframes hideSV {
+    to {
+        transform: scale(0);
+    }
+}
